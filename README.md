@@ -10,4 +10,5 @@ Avant de commancer, tapper les commandes suivantes dans le terminal :
 5. node server
 6. Aller sur http://localhost:7777
 
+Lien github : https://github.com/etienne-gagnon/420-715-AH-INTRA.git
 
