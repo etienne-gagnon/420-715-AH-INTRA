@@ -76,22 +76,22 @@ test('Si la distance n\est pas un nombre = erreur', () => {
     expect(calculerLivraison("standard", 11.11, "22.22")).toBe("La distance doit être un nombre");
    });
 
-test('Si le status est premium = livraison gratuite', () => {
+test('Si le status est premium = total 0$', () => {
     expect(calculerLivraison("premium", 11.11, 11.22)).toBe(0);
    })
 
-test('Si le status est standard et sousTotal > 150 = livraison 2$ ', () => {
+test('Si le status est standard et sousTotal > 150 = total 2$ ', () => {
     expect(calculerLivraison("standard", 151, 11.22)).toBe(2);
    })
 
-test('Si le status est standard et sousTotal < 150 et que distance < 10 = livraison 7$', () => {
+test('Si le status est standard et sousTotal < 150 et que distance < 10 = total 7$', () => {
     expect(calculerLivraison("standard", 10.53, 3)).toBe(7);
    })
 
-test('Si le status est standard et sousTotal < 150 et que distance > 10 et < 50 = livraison 12$', () => {
+test('Si le status est standard et sousTotal < 150 et que distance > 10 et < 50 = total 12$', () => {
     expect(calculerLivraison("standard", 10.53, 25)).toBe(12);
    })
 
-test('Si le status est standard et sousTotal < 150 et que distance > 50 = livraison 22$', () => {
+test('Si le status est standard et sousTotal < 150 et que distance > 50 = total 22$', () => {
     expect(calculerLivraison("standard", 10.53, 105)).toBe(22);
    })
