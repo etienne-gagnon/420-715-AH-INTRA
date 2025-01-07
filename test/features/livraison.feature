@@ -2,10 +2,10 @@
 Feature: Calcul de la livraison pour un e-commerce
 
   Scenario: Livraison gratuite pour un membre premium
-    Given un membre premium
-    When je calcule la livraison
-    Then le montant final doit être "0"
-
+    Given Le client estmembre premium
+    When je calcule le montant
+    Then total doit être "0"
+    
   Scenario: Livraison "0" et tax "2" pour un membre standard avec sous-total > "150"
     Given un membre standard avec sous-total > "150"
     When je calcule la livraison
