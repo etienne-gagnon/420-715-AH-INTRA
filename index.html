@@ -8,18 +8,19 @@
 <body>
 
     <form style="display:flex;flex-direction: column; max-width: 300px; gap:10px;">
+        <label for="">Membre :</label>
+        <select name="typeLivraison" id="">
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+
         <label for="">Sous-total de la commande :</label>
         <input name="sousTotal" placeholder="10.00$">
 
         <label for="">Distance en km pour la livraison :</label>
         <input name="distance" placeholder="15">
 
-        <label for="">Type de la livraison :</label>
-        <select name="typeLivraison" id="">
-            <option value="standard">Standard</option>
-            <option value="premium">Premium</option>
-        </select>
-        <button type="submit">Passer la commande</button>
+        <button type="submit">Calculer</button>
     </form>
     
 </body>
